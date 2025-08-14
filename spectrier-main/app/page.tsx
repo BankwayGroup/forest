@@ -17,7 +17,7 @@ export default function IndexPage() {
         {/* Wrap LoginButton in a styled div */}
         <div className="w-full rounded-lg bg-blue-600 hover:bg-blue-700 transition-colors duration-200">
           <LoginButton
-            botUsername="forestmarketbot"
+            botUsername="ForestMarketBot"
             onAuthCallback={(data) => {
               void signIn(
                 "telegram-login",
