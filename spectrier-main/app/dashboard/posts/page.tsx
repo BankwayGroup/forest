@@ -14,7 +14,7 @@ export default async function ViewPosts() {
           Посты
         </h1>
         <Link href={"/dashboard/posts/create"}>
-          <Button variant="secondary">Создать</Button>
+          <Button variant="secondary">Create</Button>
         </Link>
       </div>
       <DataTable data={posts} columns={postColumns} />
