@@ -5,7 +5,7 @@ export default function Policy() {
         Privacy Policy and Personal Data Processing
       </h1>
       <p>
-        This Privacy Policy regulates the collection and use of personal and other data by the SabrWatch Telegram bot (hereinafter referred to as the Operator). The current version of this Privacy Policy is always available online at: http://t.me/forestmarketbot
+        This Privacy Policy regulates the collection and use of personal and other data by the SabrWatch Telegram bot (hereinafter referred to as the Operator). The current version of this Privacy Policy is always available online at: http://t.me/ForestMarketBot
       </p>
       <p>
         By providing personal and other data to the Operator via the Site, the User confirms their consent to the use of such data under the terms of this Privacy Policy.
@@ -20,7 +20,7 @@ export default function Policy() {
       <p className="text-xl font-semibold">1. TERMS</p>
       <ul>
         <li>
-          1.1. Site – the bot available on Telegram at: http://t.me/forestmarketbot. All exclusive rights to the Site and its elements (including software and design) belong entirely to the Operator. Transfer of exclusive rights to the User is not the subject of this Privacy Policy.
+          1.1. Site – the bot available on Telegram at: http://t.me/ForestMarketBot. All exclusive rights to the Site and its elements (including software and design) belong entirely to the Operator. Transfer of exclusive rights to the User is not the subject of this Privacy Policy.
         </li>
         <li>1.2. User – any person using the Site.</li>
         <li>1.3. Legislation – the current laws of the Republic of Kazakhstan.</li>
