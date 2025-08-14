@@ -18,7 +18,7 @@ export const OPTIONS: NextAuthOptions = {
       credentials: {},
       async authorize(credentials, req) {
         const validator = new AuthDataValidator({
-          botToken: `${process.env.BOT_TOKEN}`,
+          botToken: "8193140650:AAGet9DfYzjwI11uI8hTO2kAb3SbdGX6t_4",
         });
 
         const data = objectToAuthDataMap(req.query || {});
@@ -55,7 +55,7 @@ export const OPTIONS: NextAuthOptions = {
     strategy: "jwt",
   },
   jwt: {
-    secret: process.env.NEXTAUTH_SECRET, //'supersecret' // also in vercel env variables
+    secret: "supersecret_hardcoded_jwt_secret",
     maxAge: 15 * 24 * 30 * 60, // 15 days
   },
   pages: {
