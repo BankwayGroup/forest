@@ -55,7 +55,7 @@ export const OPTIONS: NextAuthOptions = {
     strategy: "jwt",
   },
   jwt: {
-    secret: "supersecret_hardcoded_jwt_secret",
+    secret: "0kmsThJbqUFDzZUpb9Dufi22Vw4wmPbi",
     maxAge: 15 * 24 * 30 * 60, // 15 days
   },
   pages: {
