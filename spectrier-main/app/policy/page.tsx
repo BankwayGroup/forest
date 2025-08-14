@@ -2,200 +2,127 @@ export default function Policy() {
   return (
     <div className="container">
       {/* <h1 className="text-3xl">
-        Политика конфиденциальности и обработки персональных данных
+        Privacy Policy and Personal Data Processing
       </h1>
       <p>
-        Настоящая политика конфиденциальности и обработки персональных данных
-        регулирует порядок обработки и использования персональных и иных данных
-        Телеграм бота SabrWatch (дальше — Оператор). Действующая редакция
-        настоящей Политики конфиденциальности, постоянно доступна для
-        ознакомления, и размещена в сети Интернет по адресу:
-        http://t.me/spectrierbot
+        This Privacy Policy regulates the collection and use of personal and other data by the SabrWatch Telegram bot (hereinafter referred to as the Operator). The current version of this Privacy Policy is always available online at: http://t.me/spectrierbot
       </p>
       <p>
-        Передавая Оператору персональные и иные данные посредством Сайта,
-        Пользователь подтверждает свое согласие на использование указанных
-        данных на условиях, изложенных в настоящей Политике конфиденциальности.
+        By providing personal and other data to the Operator via the Site, the User confirms their consent to the use of such data under the terms of this Privacy Policy.
       </p>
       <p>
-        Если Пользователь не согласен с условиями настоящей Политики
-        конфиденциальности, он обязан прекратить использование Сайта.
+        If the User does not agree with the terms of this Privacy Policy, they must stop using the Site.
       </p>
       <p>
-        Безусловным акцептом настоящей Политики конфиденциальности является
-        начало использования Сайта Пользователем.
+        Using the Site constitutes unconditional acceptance of this Privacy Policy by the User.
       </p>
-      <p className="text-xl font-semibold">1.ТЕРМИНЫ</p>
+
+      <p className="text-xl font-semibold">1. TERMS</p>
       <ul>
         <li>
-          1.1. Сайт - бот, расположенный в сети Интернет в Телеграм по адресу:
-          http://t.me/spectrierbot Все исключительные права на Сайт и его
-          отдельные элементы (включая программное обеспечение, дизайн)
-          принадлежат Оператору в полном объеме. Передача исключительных прав
-          Пользователю не является предметом настоящей Политики
-          конфиденциальности.
+          1.1. Site – the bot available on Telegram at: http://t.me/spectrierbot. All exclusive rights to the Site and its elements (including software and design) belong entirely to the Operator. Transfer of exclusive rights to the User is not the subject of this Privacy Policy.
         </li>
-        <li>1.2. Пользователь — лицо использующее Сайт.</li>
+        <li>1.2. User – any person using the Site.</li>
+        <li>1.3. Legislation – the current laws of the Republic of Kazakhstan.</li>
         <li>
-          1.3. Законодательство — действующее законодательство Республики
-          Казахстан.
+          1.4. Personal Data – personal data provided by the User during registration or while using the Site's functionality.
         </li>
         <li>
-          1.4. Персональные данные — персональные данные Пользователя, которые
-          Пользователь предоставляет самостоятельно при регистрации или в
-          процессе использования функционала Сайта.
+          1.5. Data – other information about the User (not considered Personal Data).
         </li>
         <li>
-          1.5. Данные — иные данные о Пользователе (не входящие в понятие
-          Персональных данных).
+          1.6. Registration – completing the registration form on the Site by providing the required information and submitting scanned documents.
         </li>
         <li>
-          1.6. Регистрация — заполнение Пользователем Регистрационной формы,
-          расположенной на Сайте, путем указания необходимых сведений и отправки
-          сканированных документов.
+          1.7. Registration Form – the form on the Site that the User must complete to use the Site fully.
         </li>
         <li>
-          1.7. Регистрационная форма — форма, расположенная на Сайте, которую
-          Пользователь должен заполнить для возможности использования сайта в
-          полном объеме.
-        </li>
-        <li>
-          1.8. Услуга(и) — услуги, предоставляемые Оператором на основании
-          соглашения.
+          1.8. Service(s) – services provided by the Operator under the agreement.
         </li>
       </ul>
-      <p className="text-xl font-semibold">
-        2. СБОР И ОБРАБОТКА ПЕРСОНАЛЬНЫХ ДАННЫХ
-      </p>
+
+      <p className="text-xl font-semibold">2. COLLECTION AND PROCESSING OF PERSONAL DATA</p>
       <ul>
         <li>
-          2.1. Оператор собирает и хранит только те Персональные данные, которые
-          необходимы для оказания Услуг Оператором и взаимодействия с
-          Пользователем.
+          2.1. The Operator collects and stores only Personal Data necessary to provide Services and interact with the User.
         </li>
         <li>
-          2.2. Персональные данные могут использоваться в следующих целях:
+          2.2. Personal Data may be used for the following purposes:
         </li>
-        <li>2.2.1 оказание Услуг Пользователю;</li>
-        <li>2.2.2 идентификация Пользователя;</li>
-        <li>2.2.3 взаимодействие с Пользователем;</li>
+        <li>2.2.1. Providing services to the User;</li>
+        <li>2.2.2. Identifying the User;</li>
+        <li>2.2.3. Communicating with the User;</li>
+        <li>2.2.4. Sending promotional materials, information, and requests to the User;</li>
+        <li>2.2.5. Conducting statistical and other research;</li>
+        <li>2.3. The Operator processes the following data:</li>
+        <li>2.3.1. Full name;</li>
+        <li>2.3.2. Email address;</li>
+        <li>2.3.3. Phone number (including mobile).</li>
         <li>
-          2.2.4 направление Пользователю рекламных материалов, информации и
-          запросов;
-        </li>
-        <li>2.2.5 проведение статистических и иных исследований;</li>
-        <li>2.3. Оператор в том числе обрабатывает следующие данные:</li>
-        <li>2.3.1 фамилия, имя и отчество;</li>
-        <li>2.3.2 адрес электронной почты;</li>
-        <li>2.3.3 номер телефона (в т.ч. мобильного).</li>
-        <li>
-          2.4. Пользователю запрещается указывать на Сайте персональные данные
-          третьих лиц(за исключением условия представления интересов этих лиц,
-          имея документальное подтверждение третьих лиц на осуществление таких
-          действий).
+          2.4. Users may not provide personal data of third parties (except when representing these third parties with proper documentation).
         </li>
       </ul>
-      <p className="text-xl font-semibold">
-        3. ПОРЯДОК ОБРАБОТКИ ПЕРСОНАЛЬНЫХ И ИНЫХ ДАННЫХ
-      </p>
+
+      <p className="text-xl font-semibold">3. PROCESSING OF PERSONAL AND OTHER DATA</p>
       <ul>
         <li>
-          3.1. Оператор обязуется использовать Персональные данные в
-          соответствии с Законом «О персональных данных» Республики Казахстан и
-          внутренними документами Оператора.
+          3.1. The Operator shall use Personal Data in accordance with the Law on Personal Data of the Republic of Kazakhstan and internal Operator policies.
         </li>
         <li>
-          3.2. В отношении Персональных данных и иных Данных Пользователя
-          сохраняется их конфиденциальность, кроме случаев, когда указанные
-          данные являются общедоступными.
+          3.2. Personal Data and other Data shall remain confidential unless publicly available.
         </li>
         <li>
-          3.3. Оператор имеет право сохранять архивную копию Персональных
-          данных. Оператор имеет право хранить Персональные данные и Данные на
-          серверах вне территории Республики Казахстан.
+          3.3. The Operator may keep archival copies of Personal Data and store data on servers outside Kazakhstan.
         </li>
         <li>
-          3.4. Оператор имеет право передавать Персональные данные и Данные
-          Пользователя без согласия Пользователя следующим лицам:
+          3.4. The Operator may transfer Personal Data and other Data without the User’s consent to:
         </li>
         <li>
-          3.4.1 государственным органам, в том числе органам дознания и
-          следствия, и органам местного самоуправления по их мотивированному
-          запросу;
+          3.4.1. Government authorities, investigative bodies, and local authorities upon their justified request;
         </li>
         <li>
-          3.4.2 в иных случаях, прямо предусмотренных действующим
-          законодательством Республики Казахстан.
+          3.4.2. Other cases provided by the current laws of Kazakhstan.
         </li>
         <li>
-          3.5. Оператор имеет право передавать Персональные данные и Данные
-          третьим лицам, не указанным в п.3.4. настоящей Политики
-          конфиденциальности, в следующих случаях:
+          3.5. The Operator may transfer Personal Data to third parties not listed in 3.4 if:
         </li>
-        <li>3.5.1 Пользователь выразил свое согласие на такие действия;</li>
+        <li>3.5.1. The User consents;</li>
+        <li>3.5.2. Transfer is necessary to use the Site or provide Services;</li>
+        <li>3.6. The Operator performs automated processing of Personal Data and other Data.</li>
+      </ul>
+
+      <p className="text-xl font-semibold">4. PROTECTION OF PERSONAL DATA</p>
+      <ul>
         <li>
-          3.5.2 передача необходима в рамках использования Пользователем Сайта
-          или оказания Услуг Пользователю;
+          4.1. The Operator ensures proper protection of Personal Data according to the law and takes adequate organizational and technical measures.
         </li>
         <li>
-          3.6. Оператор осуществляет автоматизированную обработку Персональных
-          данных и Данных.
+          4.2. These measures protect Personal Data against unauthorized or accidental access, destruction, modification, blocking, copying, distribution, or other illegal actions.
         </li>
       </ul>
-      <p className="text-xl font-semibold">4. ЗАЩИТА ПЕРСОНАЛЬНЫХ ДАННЫХ</p>
+
+      <p className="text-xl font-semibold">5. OTHER PROVISIONS</p>
       <ul>
         <li>
-          4.1. Оператор осуществляет надлежащую защиту Персональных и иных
-          данных в соответствии с Законодательством и принимает необходимые и
-          достаточные организационные и технические меры для защиты Персональных
-          данных.
+          5.1. This Privacy Policy and the relations between the User and Operator are governed by the law of the Republic of Kazakhstan.
         </li>
         <li>
-          4.2. Применяемые меры защиты в том числе позволяют защитить
-          Персональные данные от неправомерного или случайного доступа,
-          уничтожения, изменения, блокирования, копирования, распространения, а
-          также от иных неправомерных действий с ними третьих лиц.
-        </li>
-      </ul>
-      <p className="text-xl font-semibold">5. ИНЫЕ ПОЛОЖЕНИЯ</p>
-      <ul>
-        <li>
-          5.1. К настоящей Политике конфиденциальности и отношениям между
-          Пользователем и Оператором, возникающим в связи с применением Политики
-          конфиденциальности, подлежит применению право Республики Казахстан.
+          5.2. Any disputes shall be resolved according to local laws at the Operator's registered location.
         </li>
         <li>
-          5.2. Все возможные споры, вытекающие из настоящего Соглашения,
-          подлежат разрешению в соответствии с действующим законодательством по
-          месту регистрации Оператора.
+          Before going to court, the User must follow a mandatory pre-trial procedure and send a written claim to the Operator. The response time is 30 business days.
         </li>
         <li>
-          Перед обращением в суд Пользователь должен соблюсти обязательный
-          досудебный порядок и направить Оператору соответствующую претензию в
-          письменном виде. Срок ответа на претензию составляет 30 (тридцать)
-          рабочих дней.
+          5.3. If any provision of this Privacy Policy is found invalid, it does not affect the validity of the remaining provisions.
         </li>
         <li>
-          5.3. Если по тем или иным причинам одно или несколько положений
-          Политики конфиденциальности будут признаны недействительными или не
-          имеющими юридической силы, это не оказывает влияния на
-          действительность или применимость остальных положений Политики
-          конфиденциальности.
+          5.4. The Operator may change the Privacy Policy at any time unilaterally. Changes take effect immediately upon posting on the Site.
         </li>
         <li>
-          5.4. Оператор имеет право в любой момент изменять Политику
-          конфиденциальности (полностью или в части) в одностороннем порядке без
-          предварительного согласования с Пользователем. Все изменения вступают
-          в силу с момента ее размещения на Сайте.
+          5.5. Users must monitor updates to the Privacy Policy themselves.
         </li>
         <li>
-          5.5. Пользователь обязуется самостоятельно следить за изменениями
-          Политики конфиденциальности путем ознакомления с актуальной редакцией.
-        </li>
-        <li>
-          5.6. Все предложения или вопросы по настоящей Политике
-          конфиденциальности следует сообщать по электронной почте
-          orlov-vadim@inbox.ru или по телефонам: +77056142991.
+          5.6. Questions or suggestions regarding this Privacy Policy should be sent to orlov-vadim@inbox.ru or by phone: +77056142991.
         </li>
       </ul> */}
     </div>
