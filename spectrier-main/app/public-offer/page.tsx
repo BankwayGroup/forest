@@ -8,7 +8,6 @@ import { useEffect, useState, useTransition } from "react";
 import CartItem from "@/components/cart-item";
 import { Separator } from "@/components/ui/separator";
 import { Input } from "@/components/ui/input";
-import { sendInvoiceToBot, sendInvoiceToSupport } from "../../actions";
 import { NewUser } from "@/lib/db/schema";
 import { Loader2 } from "lucide-react";
 
