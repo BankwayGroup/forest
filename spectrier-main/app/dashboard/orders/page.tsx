@@ -57,7 +57,7 @@ export default async function OrdersPage() {
     <>
       <div className="flex space-x-4">
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-          Заказы
+          Orders
         </h1>
         {/* <Link href={"/dashboard/products/create-product"}>
           <Button variant="secondary">Создать</Button>
