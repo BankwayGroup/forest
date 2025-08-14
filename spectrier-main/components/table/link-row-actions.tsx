@@ -38,11 +38,11 @@ export function LinkRowActions({
       <DropdownMenuContent align="end" className="w-[160px]">
         {active ? (
           <>
-            {/* https://t.me/spectrierbot?start=test #FIXME: add client-side env for botusername*/}
+            {/* https://t.me/forestmarketbot?start=test #FIXME: add client-side env for botusername*/}
             <DropdownMenuItem
               onClick={() => {
                 navigator.clipboard.writeText(
-                  `https://t.me/spectrierbot?start=${linkData.code}`
+                  `https://t.me/forestmarketbot?start=${linkData.code}`
                 );
               }}
             >
