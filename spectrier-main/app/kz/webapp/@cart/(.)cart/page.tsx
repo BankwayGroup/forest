@@ -22,7 +22,7 @@ export default function CartPage() {
 
   const totalSum = cart
     .map((p) => p.price * (p.quantity as number))
-    .reduce((next, prev) => next + prev);
+    .reduce((next, prev) => next + prev, 0);
 
   useEffect(() => {
     if (window == undefined) return;
@@ -45,19 +45,19 @@ export default function CartPage() {
       username: Telegram.WebApp.initDataUnsafe.user?.username as string,
     };
 
-    let sanitisedComment = comment.replaceAll(".", " ");
-    let sanitisedAddress = address.replaceAll(".", " ");
+    let sanitizedComment = comment.replaceAll(".", " ");
+    let sanitizedAddress = address.replaceAll(".", " ");
 
     startTransition(() =>
       sendInvoiceToSupport({
         cart,
         totalSum,
-        comment: sanitisedComment,
-        address: sanitisedAddress,
+        comment: sanitizedComment,
+        address: sanitizedAddress,
         user,
       }).then(() =>
         Telegram.WebApp.showAlert(
-          "Тапсырысыңыз жасалды, кеңесшіні күтіңіз",
+          "Your order has been submitted. Please wait for a consultant.",
           () => Telegram.WebApp.close()
         )
       )
@@ -71,18 +71,18 @@ export default function CartPage() {
       username: Telegram.WebApp.initDataUnsafe.user?.username as string,
     };
 
-    let sanitisedComment = comment.replaceAll(".", " ");
-    let sanitisedAddress = address.replaceAll(".", " ");
+    let sanitizedComment = comment.replaceAll(".", " ");
+    let sanitizedAddress = address.replaceAll(".", " ");
 
     startTransition(() => {
       sendInvoiceToBot({
         cart,
         totalSum,
-        comment: sanitisedComment,
-        address: sanitisedAddress,
+        comment: sanitizedComment,
+        address: sanitizedAddress,
         user,
       }).then(() =>
-        Telegram.WebApp.showAlert("Тапсырысыңыз жасалды", () =>
+        Telegram.WebApp.showAlert("Your order has been submitted.", () =>
           Telegram.WebApp.close()
         )
       );
@@ -93,65 +93,64 @@ export default function CartPage() {
     <Dialog open onOpenChange={handleOnOpenChange}>
       <DialogContent className="sm:max-w-[425px] mt-10 mx-10">
         <div className="grid gap-2 py-4">
-          <p className="text-lg font-bold">СІЗДІҢ ТАПСЫРЫСЫҢЫЗ</p>
+          <p className="text-lg font-bold">YOUR ORDER</p>
           {cart.map((item) => (
             <CartItem key={item.id} {...item} />
           ))}
           <Separator />
           <div className="p-2 h-10 rounded-md flex items-center justify-between">
-            <p className=" text-lg">Нәтиже: </p>
+            <p className="text-lg">Total:</p>
             <p>{totalSum} ₸</p>
           </div>
           <Separator />
           <div className="space-y-2 pt-4">
             <Input
-              placeholder="Пікір қосу..."
+              placeholder="Add a comment..."
               value={comment}
               onChange={(value) => setComment(value.currentTarget.value)}
             />
             <p className="text-sm text-muted-foreground">
-              Кез келген тілектер, мәліметтер немесе сұрақтар.
+              Any wishes, notes, or questions.
             </p>
             <Input
-              placeholder="Мекенжай"
+              placeholder="Address"
               value={address}
               onChange={(value) => setAddress(value.currentTarget.value)}
             />
             <p className="text-sm text-muted-foreground">
-              Жеткізу мекенжайын енгізіңіз...
+              Enter your delivery address...
             </p>
           </div>
         </div>
         <div className="space-y-2">
-          <h2>Төлеу әдісін таңдаңыз:</h2>
+          <h2>Select a payment method:</h2>
           <div className="flex space-x-2 w-full justify-center">
             <Button onClick={submitInvoiceToSupport} disabled={isPending}>
               {isPending ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Жүру...
+                  Processing...
                 </>
               ) : (
-                "Кеңесші арқылы"
+                "Via Consultant"
               )}
             </Button>
             {/* <Button onClick={submitInvoiceToBot} disabled={isPending}>
               {isPending ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                  Жүру...
+                  Processing...
                 </>
               ) : (
-                "Телеграмма арқылы"
+                "Via Telegram Bot"
               )}
             </Button> */}
           </div>
           <p className="text-sm text-muted-foreground">
-            Кеңесші арқылы: біздің қызметкер тапсырыс үшін төлем туралы сізбен
-            хабарласады.
+            Via Consultant: our staff will contact you for payment.
           </p>
           {/* <p className="text-sm text-muted-foreground">
-            Telegram арқылы: бот сізге төлем сұрауын жібереді.
+            Via Telegram Bot: the bot will send you a payment request.
           </p> */}
         </div>
       </DialogContent>
