@@ -9,8 +9,7 @@ export default async function DashboardPage() {
         </h1>
       </div>
       <p>
-        Сюда пойдет карточки с информацией: сколько товаров продано сегодня, кол
-        заказов итд.
+        Here will be the cards with information: how many products were sold today, the number of orders, etc.
       </p>
     </>
   );
