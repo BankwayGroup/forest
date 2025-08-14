@@ -12,7 +12,7 @@ export default async function LinksPage() {
     <>
       <div className="flex space-x-4">
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-          Ссылки
+          Links
         </h1>
         <CreateLink />
       </div>
