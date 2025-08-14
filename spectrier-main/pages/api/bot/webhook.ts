@@ -11,23 +11,23 @@ if (!token) throw new Error("BOT_TOKEN is unset");
 const bot = new Bot(token);
 
 const keyboard = new Keyboard()
-  .text("Каталог")
-  .text("Помощь")
+  .text("Catalog")
+  .text("Help")
   .row()
-  // .text("Публичная оферта")
-  // .text("Политика конфиденциальности")
+  // .text("Public Offer")
+  // .text("Privacy Policy")
   // .row()
-  .text("Связь с оператором")
+  .text("Contact Operator")
   .resized()
   .persistent();
 
 // const publicPolicy = new InlineKeyboard().webApp(
-//   "Открыть",
+//   "Open",
 //   "https://spectrier.vercel.app/policy"
 // );
 
 // const publicOffer = new InlineKeyboard().webApp(
-//   "Открыть",
+//   "Open",
 //   "https://spectrier.vercel.app/public-offer"
 // );
 
@@ -60,7 +60,7 @@ bot.command("start", async (ctx) => {
 
     await db.insert(user).values({
       name:
-        ctx.message?.from.first_name || "" + ctx.message?.from.last_name || "",
+        (ctx.message?.from.first_name || "") + " " + (ctx.message?.from.last_name || ""),
       telegramId: ctx.message?.from.id.toString() || "",
       username: ctx.message?.from.username || "",
     });
@@ -75,7 +75,7 @@ bot.command("help", async (ctx) => {
   await ctx.reply(botConfig.ru.commands.help);
 });
 
-bot.hears("Помощь", async (ctx) => {
+bot.hears("Help", async (ctx) => {
   if (ctx.from?.language_code?.toLocaleLowerCase() == "kk") {
     return await ctx.reply(botConfig.kk.commands.help);
   }
@@ -83,7 +83,7 @@ bot.hears("Помощь", async (ctx) => {
   await ctx.reply(botConfig.ru.commands.help);
 });
 
-bot.hears("Связь с оператором", async (ctx) => {
+bot.hears("Contact Operator", async (ctx) => {
   if (ctx.from?.language_code?.toLocaleLowerCase() == "kk") {
     return await ctx.reply(botConfig.kk.commands.support);
   }
@@ -92,23 +92,23 @@ bot.hears("Связь с оператором", async (ctx) => {
 });
 
 // bot.command("terms", async (ctx) => {
-//   await ctx.reply("Публичная оферта ссылка", {
+//   await ctx.reply("Public Offer link", {
 //     reply_markup: publicOffer,
 //   });
 
-//   await ctx.reply("Политика конфиденциальности ссылка", {
+//   await ctx.reply("Privacy Policy link", {
 //     reply_markup: publicPolicy,
 //   });
 // });
 
-// bot.hears("Публичная оферта", async (ctx) => {
-//   await ctx.reply("Публичная оферта ссылка", {
+// bot.hears("Public Offer", async (ctx) => {
+//   await ctx.reply("Public Offer link", {
 //     reply_markup: publicOffer,
 //   });
 // });
 
-// bot.hears("Политика конфиденциальности", async (ctx) => {
-//   await ctx.reply("Политика конфиденциальности ссылка", {
+// bot.hears("Privacy Policy", async (ctx) => {
+//   await ctx.reply("Privacy Policy link", {
 //     reply_markup: publicPolicy,
 //   });
 // });
@@ -121,7 +121,7 @@ bot.command("catalog", async (ctx) => {
   await ctx.reply(botConfig.ru.commands.catalog);
 });
 
-bot.hears("Каталог", async (ctx) => {
+bot.hears("Catalog", async (ctx) => {
   if (ctx.from?.language_code?.toLocaleLowerCase() == "kk") {
     return await ctx.reply(botConfig.kk.commands.catalog);
   }
